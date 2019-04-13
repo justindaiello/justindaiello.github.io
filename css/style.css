@@ -13,22 +13,22 @@ img {
 }
 
 body {
-  background-image: linear-gradient(rgb(232, 232, 221), rgb(155, 14, 21) 60%);
+  background: url("images/dragons.jpg") no-repeat;
   background-repeat: round;
   font-family: 'MedievalSharp', cursive;
 }
 
 .navlinks {
     text-decoration: none;
-    color: rgb(226, 16, 32)
+    color: rgb(226, 16, 32);
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   font-size: 20px;
-  /* background-image: linear-gradient(rgb(104, 167, 188),rgb(105, 42, 43)); */
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgb(231, 231, 219);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   height: 65px;
 }
 
@@ -40,20 +40,14 @@ body {
   align-items: center;
 }
 
-.test {
-  display: flex;
-  height: 500px;
-  width: 500px;
-  color: orange;
-}
-
 .drop-button, .drop-content {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid black;
-  background-color: rgba(172, 169, 169, 0.1);
+  background-color: rgb(231, 231, 219);
   font-family: 'MedievalSharp', cursive;
   font-size: 15px;
+  color: rgb(104, 167, 188);
 }
 
 .drop-content {
@@ -76,8 +70,23 @@ body {
 
 .dropdown:hover .drop-button {
   background-color: rgb(104, 167, 188);
+  color: rgb(231, 231, 219);
 }
 
 .drop-content div:hover {
   background-color: rgb(104, 167, 188);
+  color: rgb(231, 231, 219);
+}
+
+.container{
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.char-info {
+  height: 500px;
+  width: 75%;
+  /* background: radial-gradient(rgb(100, 36, 38), rgb(193, 153, 123)); */
+  border-radius: 10px;
 }
