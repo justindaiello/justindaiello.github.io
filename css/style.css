@@ -7,18 +7,29 @@
 img {
   width: 25%;
   height: auto;
-  /* display: inline-block;
+  display: inline-block;
   margin-top: 10px;
-  margin-left: 20px; */
+  margin-left: 20px;
+}
+
+body {
+  background-image: linear-gradient(rgb(232, 232, 221), rgb(155, 14, 21) 60%);
+  background-repeat: round;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.navlinks {
+    text-decoration: none;
+    color: rgb(226, 16, 32)
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   font-size: 20px;
-  background-image: linear-gradient(200deg, rgb(104,167,188) 0%, rgb(105,42,43) 100%);
+  /* background-image: linear-gradient(rgb(104, 167, 188),rgb(105, 42, 43)); */
   border: 1px solid rgba(0, 0, 0, 0.5);
-  padding: -10px 0px
+  height: 65px;
 }
 
 .main-bar {
@@ -27,10 +38,46 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-
 }
 
-.main-bar li {
+.test {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  color: orange;
+}
 
+.drop-button, .drop-content {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgba(172, 169, 169, 0.1);
+  font-family: 'MedievalSharp', cursive;
+  font-size: 15px;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  border: 1px solid black;
+}
+
+.drop-content div {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.dropdown:hover .drop-content{
+  display: block;
+  overflow: visible;
+}
+
+.dropdown:hover .drop-button {
+  background-color: rgb(104, 167, 188);
+}
+
+.drop-content div:hover {
+  background-color: rgb(104, 167, 188);
 }
