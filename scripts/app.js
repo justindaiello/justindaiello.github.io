@@ -6,7 +6,9 @@ $(() => {
       url: "https://api-beta.open5e.com/classes/"
   }).then(
       (data)=>{
-        console.log(data.results[2].equipment);
+        $('.photo').attr('src', "css/images/cleric.png")
+        $('.class-info h1').text(`${data.results[2].name}:`.toUpperCase());
+        $('.class-info p').text(data.results[2].desc)
       },
       ()=>{
           console.log('bad');
