@@ -48,6 +48,7 @@ body {
   font-family: 'MedievalSharp', cursive;
   font-size: 15px;
   color: rgb(104, 167, 188);
+  cursor: pointer;
 }
 
 .drop-content {
@@ -92,7 +93,7 @@ body {
   flex-direction: row;
   height: 500px;
   width: 75%;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 10px;
 }
 
@@ -130,7 +131,7 @@ body {
   padding: 5px 0px;
 }
 
-.class-info p {
+.class-info p, .box-2 p {
   padding: 0px 5px;
   color: rgb(231, 231, 219);
 }
@@ -141,9 +142,25 @@ body {
   margin-left: 15px;
   border: 1px solid white;
   overflow: auto;
-  background: rgba(0, 0, 0, 0.5)
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(231, 231, 219);
 }
 
 .box-2 {
   margin-left: 15px;
+}
+
+.misc-info h2 {
+  padding: 15px 5px 5px 7px;;
+  color: rgb(104, 167, 188);
+  font-size: 20px;
+}
+
+.misc-info span {
+  color: rgb(226, 16, 32);
+  font-size: 18px;
+}
+
+.box-2 h2 {
+  text-align: center;
 }
