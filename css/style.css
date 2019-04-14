@@ -24,9 +24,19 @@ footer {
   color: rgb(226, 16, 32);
 }
 
+footer div {
+  font-size: 15px;
+}
+
+/* .container {
+  z-index: 2;
+} */
+
 .navlinks {
     text-decoration: none;
     color: rgb(226, 16, 32);
+    padding-right: 20px;
+    cursor: pointer;
 }
 
 .navbar, footer {
@@ -168,4 +178,46 @@ footer {
 
 .box-2 h2 {
   text-align: center;
+}
+
+/* responsive modal */
+#modal-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%;
+  border: 1px solid white;
+  background-color: rgba(231, 231, 219, 0.9);
+  z-index: 1;
+}
+
+.modal-inside {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  flex-direction: row-reverse;
+}
+
+.close {
+  font-size: 40px;
+  text-align: right;
+  padding-right: 5px;
+  margin-top: -5px;
+  color: rgb(226, 16, 32);
+  cursor: pointer;
+}
+
+.modal-inside h1 {
+  display: flex;
+  margin: 0 auto;
+  color: rgb(104, 167, 188);
 }

@@ -28,8 +28,9 @@
             </div>
           </div>
         </li>
-        <li><a href="#" class='navlinks'>Home</a></li>
-        <li><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" class='navlinks'>About Us</a></li>
+        <li><a href="http://dnd.wizards.com/" target='_blank' class='navlinks'>Home</a></li>
+        <!-- Modal pops up on click -->
+        <li class='modal-btn navlinks'>About</li>
       </ul>
     </nav>
     <!-- Area where class information will be displayed. -->
@@ -58,6 +59,15 @@
         </div>
       </div>
     </div>
-    <footer>Made with &hearts; by Justin Aiello</footer>
+    <footer>
+      <div>Made with &hearts; by Justin Aiello</div>
+    </footer>
+    <!-- Hidden Modal -->
+    <div id='modal-box'>
+      <div class='modal-inside'>
+        <span class='close'>&times;</span>
+        <h1>test info</h1>
+      </div>
+    </div>
   </body>
 </html>
