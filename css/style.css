@@ -18,12 +18,18 @@ body {
   font-family: 'MedievalSharp', cursive;
 }
 
+footer {
+  justify-content: center;
+  align-items: center;
+  color: rgb(226, 16, 32);
+}
+
 .navlinks {
     text-decoration: none;
     color: rgb(226, 16, 32);
 }
 
-.navbar {
+.navbar, footer {
   display: flex;
   flex-direction: row;
   font-size: 20px;
@@ -93,7 +99,6 @@ body {
   flex-direction: row;
   height: 500px;
   width: 75%;
-  /* border: 2px solid white; */
   border-radius: 10px;
 }
 
