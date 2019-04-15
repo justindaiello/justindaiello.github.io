@@ -50,11 +50,13 @@ $('#warlock').on('click', () => { $getCharInfo(10, "css/images/warlock.png") })
 //Listener to open the modal when the About button is clicked
 $('.modal-btn').on('click', () => {
   $('#modal-box').css('display', 'block');
+  $('.container').css('filter', 'blur(3px)')
   })
 
 //Listener to close the modal when the X is clicked
 $('.close').on('click', () => {
   $('#modal-box').css('display', 'none')
+  $('.container').css('filter', 'none')
 })
 
 
