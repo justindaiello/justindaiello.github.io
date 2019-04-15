@@ -1,3 +1,16 @@
+@media (max-width 960px) {
+
+body {
+  width 60%;
+  margin: 0 auto;
+}
+
+}
+
+
+
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -16,6 +29,8 @@ body {
   background: url("images/dragons.jpg") no-repeat;
   background-repeat: round;
   font-family: 'MedievalSharp', cursive;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -39,6 +54,10 @@ footer div {
     cursor: pointer;
 }
 
+.home {
+  padding-left: 20px;
+}
+
 .navbar, footer {
   display: flex;
   flex-direction: row;
@@ -52,12 +71,13 @@ footer div {
   width: 100%;
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
-.drop-button, .drop-content {
-  padding: 10px;
+.battle {
+  width: 100%;
+  padding: 10px 25px;
   border-radius: 10px;
   border: 1px solid black;
   background-color: rgb(231, 231, 219);
@@ -65,6 +85,18 @@ footer div {
   font-size: 15px;
   color: rgb(104, 167, 188);
   cursor: pointer;
+}
+
+.drop-button, .drop-content {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgb(231, 231, 219);
+  font-family: 'MedievalSharp', cursive;
+  font-size: 15px;
+  color: rgb(104, 167, 188);
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 .drop-content {
@@ -85,7 +117,7 @@ footer div {
   overflow: visible;
 }
 
-.dropdown:hover .drop-button {
+.dropdown:hover .drop-button, .battle:hover {
   background-color: rgb(104, 167, 188);
   color: rgb(231, 231, 219);
 }
@@ -97,19 +129,22 @@ footer div {
 
 .container{
   display: flex;
-  margin-top: 10px;
+  margin: 0 auto;
   justify-content: center;
+  overflow: auto;
 }
 
 .char-info {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items:center;
   flex-wrap: wrap;
   flex-direction: row;
   height: 500px;
-  width: 75%;
+  min-width: 600px;
+  width: auto;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .photo-box {
@@ -143,7 +178,7 @@ footer div {
 
 .class-info h1 {
   color: rgb(104, 167, 188);
-  padding: 5px 0px;
+  padding: 5px;
 }
 
 .class-info p, .box-2 p {
@@ -205,7 +240,7 @@ footer div {
   width: 100%;
   height: 100%;
   overflow: auto;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 .close {
@@ -215,10 +250,21 @@ footer div {
   margin-top: -5px;
   color: rgb(226, 16, 32);
   cursor: pointer;
+  height: 10px;
 }
 
 .modal-inside h1 {
   display: flex;
   margin: 0 auto;
   color: rgb(104, 167, 188);
+  margin-top: -5;
 }
+
+.modal-inside p {
+  padding: 0px 5px;
+  text-align: center;
+  color: rgb(90, 90, 90);
+}
+
+
+/* **end of @media** */
