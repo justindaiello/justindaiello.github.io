@@ -48,10 +48,22 @@ body {
   align-items: center;
 }
 
+.game-btns{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: auto;
+
+}
+
 .container{
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   overflow: auto;
   min-width: 600px;
 }
@@ -66,4 +78,28 @@ body {
   border: 1px solid white;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.name {
+  border: 1px solid white;
+  color: rgb(104, 167, 188);
+  font-size: 20px;
+  margin: 10px 5px 10px 0px;
+  padding: 5px;
+}
+
+.name-btn {
+  align-items: flex-start;
+  margin: 10px 0px 10px 5px;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'MedievalSharp', cursive;
+  color: rgb(104, 167, 188);
+  background: rgb(231, 231, 219);
+  cursor: pointer;
+}
+
+.name-btn:hover {
+  background-color: rgb(104, 167, 188);
+  color: rgb(231, 231, 219);
 }

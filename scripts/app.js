@@ -59,5 +59,10 @@ $('.close').on('click', () => {
   $('.container').css('filter', 'none')
 })
 
+//Listener to open the battle page
+$('.battle').on('click', () => {
+  window.open('battle.html', '_blank')
+})
+
 
 });

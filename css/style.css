@@ -75,6 +75,10 @@ footer div {
   cursor: pointer;
 }
 
+.battle a {
+  text-decoration: none;
+}
+
 .drop-button, .drop-content {
   padding: 10px 20px;
   border-radius: 10px;
