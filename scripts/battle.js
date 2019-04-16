@@ -3,16 +3,20 @@ const character = {
   name: name,
   hitPoints: 30,
   fight: () => {
-
+    let hitPower = Math.floor(Math.random() * 4) + 5;
+    $('.game-board div').eq(4).text(`You use your axe to hit ${troll.name} for ${hitPower} damage!`).hide().fadeIn(1000)
   }
 }
 
 const troll = {
-  name: 'an angry Troll',
+  name: 'an Angry Troll',
   hitPoints: 20,
   fight: () => {
     let hitPower = Math.floor(Math.random() * 4) + 3;
-    $('.game-board').append($('<div>').addClass('troll-text').text(`${troll.name} ambushes you and hits you for ${hitPower} damage!`).hide().fadeIn(1000))
+    $('.game-board').append($('<div>').addClass('white-text').text(`${troll.name} ambushes you and hits you for ${hitPower} damage!`).hide().fadeIn(1000))
+  },
+  fight2: () => {
+
   }
 }
 
@@ -31,9 +35,9 @@ const randomizer = () => {
   gameScript();
 }
 
-//Initial script to run the game. Welcomes the player then uses some delays to introduce the enemy, stage an attack by the enemy, then give the player options on what to do next.
+//Initial script to run the game. Welcomes the player then uses some delays to introduce the enemy, stage an attack by the enemy, give the player options on what to do next by making hidden buttons appear.
 const gameScript = () => {
-  $('.game-text').text(`Welcome ${character.name}`).hide().fadeIn(1000).delay(5000);
+  $('.white-text').text(`Welcome ${character.name}`).hide().fadeIn(1000).delay(5000);
   //sets delay between first and second line of text
   setTimeout(() => {
     $('.game-board').append($('<div>').addClass('game-text').text('A formidable foe approaches in the distance...').hide().fadeIn(1000))
@@ -42,7 +46,12 @@ const gameScript = () => {
   setTimeout(() => {
     troll.fight();
   }, 4000);
-
+  setTimeout(() => {
+    $('.game-board').append($('<div>').addClass('game-text').text('Will you cast a spell, attack with a weapon, or flee?').hide().fadeIn(1000))
+  }, 6000);
+  setTimeout(() => {
+    $('.btn-div').css('display', 'inline-block').hide().fadeIn(1000);
+  }, 8000)
 }
 
 
@@ -51,7 +60,7 @@ $ (() => {
 //Listener to generate a random name when Generate button is pressed.
 $('.name-btn').on('click', randomizer);
 
-
+$('.weapon').on('click', character.fight);
 
 
 
