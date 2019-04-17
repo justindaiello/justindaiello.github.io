@@ -20,24 +20,24 @@
           <!-- Drop-down menu with class selectors -->
           <div class='dropdown'>
             <button class='drop-button'>Class</button>
-            <div class='drop-content'>
-              <div id='barbarian'>Barbarian</div>
-              <div id='bard'>Bard</div>
-              <div id='cleric'=>Cleric</div>
-              <div id='druid'>Druid</div>
-              <div id='fighter'>Fighter</div>
-              <div id='monk'>Monk</div>
-              <div id='paladin'>Paladin</div>
-              <div id='ranger'>Ranger</div>
-              <div id='rogue'>Rogue</div>
-              <div id='sorceror'>Sorceror</div>
-              <div id='warlock'>Warlock</div>
-              <div id='wizard'>Wizard</div>
-            </div>
+            <ul class='drop-content'>
+              <li id='barbarian'>Barbarian</li>
+              <li id='bard'>Bard</li>
+              <li id='cleric'=>Cleric</li>
+              <li id='druid'>Druid</li>
+              <li id='fighter'>Fighter</li>
+              <li id='monk'>Monk</li>
+              <li id='paladin'>Paladin</li>
+              <li id='ranger'>Ranger</li>
+              <li id='rogue'>Rogue</li>
+              <li id='sorceror'>Sorceror</li>
+              <li id='warlock'>Warlock</li>
+              <li id='wizard'>Wizard</li>
+            </ul>
           </div>
         </li>
         <!-- Button to go to the battle.html page -->
-        <li><button class='battle'>Battle</button></li>
+        <li><button class='battle'><a href='battle.html'>Battle</a></button></li>
         <li><a href="http://dnd.wizards.com/" target='_blank' class='navlinks home'>Home</a></li>
         <!-- Modal pops up on click -->
         <li class='modal-btn navlinks'>About</li>
@@ -77,8 +77,9 @@
     <div id='modal-box'>
       <div class='modal-inside'>
         <span class='close'>&times;</span>
-        <h1>D&D and Me</h1><br>
-        <p>D&D and Me provides both beginners and seasoned veterans an easy way to learn all about Dungeons and Dragons classes, races, spells and much more. Pick a class from the menu above to load all sorts of useful information. If you're feeling brave then prepare yourself and click on battle icon above!<br><br>Class information on this page is being pulled from the <a href='https://api-beta.open5e.com/' target='_blank'>Open 5e API</a></p>
+        <h1></h1>
+        <h2>Race:<span class='race'></span></h2>
+        <h2>Magic Item:<span class='item'></span></h2>
       </div>
     </div>
   </body>

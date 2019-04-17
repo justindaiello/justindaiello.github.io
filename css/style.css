@@ -102,11 +102,12 @@ footer div {
   border: 1px solid black;
 }
 
-.drop-content div {
+.drop-content li {
   border: 1px solid black;
   border-radius: 6px;
   padding: 5px 5px;
   text-align: center;
+  list-style-type: none;
 }
 
 .dropdown:hover .drop-content{
@@ -119,7 +120,7 @@ footer div {
   color: rgb(231, 231, 219);
 }
 
-.drop-content div:hover {
+.drop-content li:hover {
   background-color: rgb(104, 167, 188);
   color: rgb(231, 231, 219);
 }

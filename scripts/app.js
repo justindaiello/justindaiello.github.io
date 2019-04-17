@@ -29,6 +29,43 @@ const $getCharInfo = (index, pic) => {
   );
 }
 
+
+const generateCharacter = () => {
+//ajax request for random class. Generates a random number and plugs it into the index request
+  $.ajax({
+      url: "https://api-beta.open5e.com/classes/"
+  }).then(
+      (data)=>{
+        let randomIndex = Math.floor(Math.random() * (12 - 0) + 0);
+        $('.modal-inside h1').text(`${data.results[randomIndex].name}:`.toUpperCase()).hide().fadeIn(1000);
+      },
+      ()=>{ console.log('bad')}
+    );
+//ajax request for random race. generates a random number and plugs it into the index request
+    $.ajax({
+        url: "https://api-beta.open5e.com/races/"
+    }).then(
+        (data)=>{
+          let randomIndex = Math.floor(Math.random() * (9 - 0) + 0);
+          $('.race').text(`${data.results[randomIndex].name}`).hide().fadeIn(1000);
+        },
+        ()=>{ console.log('bad')}
+      );
+//ajax request for random magical item. generates a random number and plugs it into the index request
+    $.ajax({
+        url: "https://api-beta.open5e.com/magicitems/"
+    }).then(
+        (data)=>{
+          let randomIndex = Math.floor(Math.random() * (30 - 0) + 0);
+          $('.item').text(`${data.results[randomIndex].name}`).hide().fadeIn(1000);
+        },
+        ()=>{ console.log('bad')}
+      );
+
+
+}
+
+
 $(() => {
 //Fades in the NavBar upon page load
 $('.navbar').hide().fadeIn(1000);
@@ -70,22 +107,19 @@ $('#warlock').on('click', () => { $getCharInfo(10, "css/images/warlock.png") })
 $('#wizard').on('click', () => { $getCharInfo(11, "css/images/wizard.png") })
 
 
-
 //Listener to open the modal when the About button is clicked
 $('.modal-btn').on('click', () => {
   $('#modal-box').css('display', 'block');
-  $('.container').css('filter', 'blur(3px)')
+  $('.container').css('filter', 'blur(3px)');
+  generateCharacter();
   })
 
 //Listener to close the modal when the X is clicked
 $('.close').on('click', () => {
   $('#modal-box').css('display', 'none')
-  $('.container').css('filter', 'none')
+  $('.container').css('filter', 'none');
 })
 
-//Listener to open the battle page
-$('.battle').on('click', () => {
-  window.open('battle.html', '_blank')
-})
+
 
 });
