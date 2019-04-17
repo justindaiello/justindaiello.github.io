@@ -4,7 +4,14 @@ const character = {
   hitPoints: 30,
   fight: () => {
     let hitPower = Math.floor(Math.random() * 4) + 5;
-    $('.game-board div').eq(4).text(`You use your axe to hit ${troll.name} for ${hitPower} damage!`).hide().fadeIn(1000)
+    $('.game-board div').eq(4).text(`You use your axe to hit ${troll.name} for ${hitPower} damage!`).hide().fadeIn(1000);
+    troll.hitPoints -= hitPower;
+    setTimeout(() =>{
+      troll.fight2();
+    }, 2000);
+  },
+  spell: () => {
+
   }
 }
 
@@ -14,9 +21,15 @@ const troll = {
   fight: () => {
     let hitPower = Math.floor(Math.random() * 4) + 3;
     $('.game-board').append($('<div>').addClass('white-text').text(`${troll.name} ambushes you and hits you for ${hitPower} damage!`).hide().fadeIn(1000))
+    character.hitPoints -= hitPower;
   },
   fight2: () => {
-
+    let hitPower = Math.floor(Math.random() * 4) + 3;
+     $('.game-board div').eq(3).text(`An Angry Troll hits you with its club for ${hitPower} damage!`).hide().fadeIn(1000);
+     character.hitPoints -= hitPower;
+     setTimeout(() => {
+     $('.game-board div').eq(4).text('Will you cast a spell, attack with a weapon, or flee?').hide().fadeIn(1000);
+   }, 2000)
   }
 }
 
