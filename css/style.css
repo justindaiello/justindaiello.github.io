@@ -14,7 +14,7 @@ img {
 }
 
 body {
-  background: url("images/dragons.jpg") no-repeat;
+  background: url("dragons.jpg") no-repeat;
   background-attachment: fixed;
   background-repeat: round;
   font-family: 'MedievalSharp', cursive;
@@ -32,26 +32,27 @@ footer {
   width: 100%;
 }
 
-footer div {
+footer p {
   font-size: 15px;
 }
 
 
 
 .navlinks {
-    text-decoration: none;
-    color: rgb(226, 16, 32);
-    padding-right: 20px;
-    cursor: pointer;
+  text-decoration: none;
+  color: rgb(226, 16, 32);
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 .home {
   padding-left: 20px;
 }
 
-.navbar, footer {
+.navbar,
+footer {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   font-size: 20px;
   background: rgb(231, 231, 219);
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -66,7 +67,8 @@ footer div {
   align-items: center;
 }
 
-.battle, .modal-btn {
+.battle,
+.modal-btn {
   width: 100%;
   padding: 10px 25px;
   border-radius: 10px;
@@ -82,7 +84,8 @@ footer div {
   text-decoration: none;
 }
 
-.drop-button, .drop-content {
+.drop-button,
+.drop-content {
   padding: 10px 20px;
   border-radius: 10px;
   border: 1px solid black;
@@ -108,12 +111,13 @@ footer div {
   list-style-type: none;
 }
 
-.dropdown:hover .drop-content{
+.dropdown:hover .drop-content {
   display: block;
   overflow: visible;
 }
 
-.dropdown:hover .drop-button, .battle:hover {
+.dropdown:hover .drop-button,
+.battle:hover {
   background-color: rgb(104, 167, 188);
   color: rgb(231, 231, 219);
 }
@@ -123,9 +127,9 @@ footer div {
   color: rgb(231, 231, 219);
 }
 
-.container{
+.container {
   display: flex;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   justify-content: center;
   overflow: auto;
   min-width: 600px;
@@ -136,9 +140,9 @@ footer div {
   justify-content: center;
   align-items:center;
   flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-direction: row; */
   height: 500px;
-  min-width: 600px;
+  /* min-width: 600px; */
   width: auto;
   border-radius: 10px;
   margin: 0 auto;
@@ -201,7 +205,7 @@ footer div {
   margin-left: 15px;
 }
 
-.misc-info h2 {
+.misc-info li {
   padding: 15px 5px 5px 7px;;
   color: rgb(104, 167, 188);
   font-size: 20px;
@@ -258,7 +262,7 @@ footer div {
   display: flex;
   margin: 0 auto;
   color: rgb(104, 167, 188);
-  margin-top: -5;
+  margin-top: -5px;
 }
 
 .modal-inside p {
