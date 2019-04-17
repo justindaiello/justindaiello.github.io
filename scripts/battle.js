@@ -11,7 +11,12 @@ const character = {
     }, 2000);
   },
   spell: () => {
-
+    let hitPower = Math.floor(Math.random() * 4) + 6;
+    $('.game-board div').eq(4).text(`You cast Magic Missle on ${troll.name} for ${hitPower} damage!`).hide().fadeIn(1000);
+    troll.hitPoints -= hitPower;
+    setTimeout(() =>{
+      troll.fight2();
+    }, 2000);
   }
 }
 
@@ -72,8 +77,12 @@ $ (() => {
 
 //Listener to generate a random name when Generate button is pressed.
 $('.name-btn').on('click', randomizer);
-
+//Listener to activate the weapon attack function for the game
 $('.weapon').on('click', character.fight);
+
+$('.spell').on('click', character.spell);
+
+
 
 
 
