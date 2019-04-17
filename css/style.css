@@ -36,9 +36,7 @@ footer div {
   font-size: 15px;
 }
 
-/* .container {
-  z-index: 2;
-} */
+
 
 .navlinks {
     text-decoration: none;
@@ -68,7 +66,7 @@ footer div {
   align-items: center;
 }
 
-.battle {
+.battle, .modal-btn {
   width: 100%;
   padding: 10px 25px;
   border-radius: 10px;
