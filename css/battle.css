@@ -20,6 +20,12 @@ body {
   margin-right: auto;
 }
 
+footer {
+  justify-content: center;
+  align-items: center;
+  color: rgb(226, 16, 32);
+}
+
 .navlinks {
     text-decoration: none;
     color: rgb(226, 16, 32);

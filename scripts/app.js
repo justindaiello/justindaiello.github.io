@@ -11,6 +11,7 @@ const $getCharInfo = (index, pic) => {
       url: "https://api-beta.open5e.com/classes/"
   }).then(
       (data)=>{
+        $('.class-info, .photo-box, .misc-info').css('display', 'flex');
         $('.photo').attr('src', pic).hide().fadeIn(1000)
         $('.class-info h1').text(`${data.results[index].name}:`.toUpperCase()).hide().fadeIn(2000);
         $('.class-info p').text(data.results[index].desc).hide().fadeIn(2000);
@@ -30,7 +31,7 @@ const $getCharInfo = (index, pic) => {
 
 $(() => {
 //Fades in the NavBar upon page load
-$('.navbar').hide().fadeIn(2000);
+$('.navbar').hide().fadeIn(1000);
 
 //Listener to pull Barbarian API data and add it to the DOM
 $('#barbarian').on('click', () => { $getCharInfo(0, "css/images/barbarian.png") })
