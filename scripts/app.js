@@ -36,17 +36,40 @@ $('.navbar').hide().fadeIn(1000);
 //Listener to pull Barbarian API data and add it to the DOM
 $('#barbarian').on('click', () => { $getCharInfo(0, "css/images/barbarian.png") })
 
+//Listener to pull Bard API data and add it to the DOM
+$('#bard').on('click', () => { $getCharInfo(1, "css/images/bard.png") })
+
 //Listener to pull Cleric API data and add it to the DOM
 $('#cleric').on('click', () => { $getCharInfo(2, "css/images/cleric.png") })
 
 //Listener to pull Druid API data and add it to the DOM
 $('#druid').on('click', () => { $getCharInfo(3, "css/images/druid.png") })
 
+//Listener to pull Fighter API data and add it to the DOM
+$('#fighter').on('click', () => { $getCharInfo(4, "css/images/fighter.png") })
+
 //Listener to pull Monk API data and add it to the DOM
 $('#monk').on('click', () => { $getCharInfo(5, "css/images/monk.png") })
 
+//Listener to pull Paladin API data and add it to the DOM
+$('#paladin').on('click', () => { $getCharInfo(6, "css/images/paladin.png") })
+
+//Listener to pull Ranger API data and add it to the DOM
+$('#ranger').on('click', () => { $getCharInfo(7, "css/images/ranger.png") })
+
+//Listener to pull Rogue API data and add it to the DOM
+$('#rogue').on('click', () => { $getCharInfo(8, "css/images/rogue.png") })
+
+//Listener to pull Sorcerer API data and add it to the DOM
+$('#sorceror').on('click', () => { $getCharInfo(9, "css/images/sorcerer.png") })
+
 //Listener to pull Warlock API data and add it to the DOM
 $('#warlock').on('click', () => { $getCharInfo(10, "css/images/warlock.png") })
+
+//Listener to pull Wizard API data and add it to the DOM
+$('#wizard').on('click', () => { $getCharInfo(11, "css/images/wizard.png") })
+
+
 
 //Listener to open the modal when the About button is clicked
 $('.modal-btn').on('click', () => {
@@ -64,6 +87,5 @@ $('.close').on('click', () => {
 $('.battle').on('click', () => {
   window.open('battle.html', '_blank')
 })
-
 
 });
