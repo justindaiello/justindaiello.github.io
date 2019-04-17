@@ -23,6 +23,10 @@ body {
 footer {
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
   color: rgb(226, 16, 32);
 }
 
@@ -79,7 +83,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 500px;
+  height: 400px;
   width: 500px;
   border: 1px solid white;
   margin: 0 auto;
@@ -87,7 +91,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.name {
+.name, .health {
   border: 1px solid white;
   color: rgb(104, 167, 188);
   font-size: 20px;
@@ -111,13 +115,13 @@ footer {
   color: rgb(231, 231, 219);
 }
 
-.btn-div {
-  display: flex;
+.btn-div, .health-bars {
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   margin-top: 5px;
-  display: none;
+  /* display: none; */
 }
 
 .game-text, .white-text {
@@ -132,4 +136,10 @@ footer {
 
 .white-text {
   color: white;
+}
+
+.health-box {
+  align-self:
+  border: 1px solid white;
+  color: red;
 }

@@ -15,6 +15,7 @@ img {
 
 body {
   background: url("images/dragons.jpg") no-repeat;
+  background-attachment: fixed;
   background-repeat: round;
   font-family: 'MedievalSharp', cursive;
   margin-left: auto;
@@ -25,6 +26,10 @@ footer {
   justify-content: center;
   align-items: center;
   color: rgb(226, 16, 32);
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
 }
 
 footer div {

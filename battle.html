@@ -9,7 +9,7 @@
     crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <script src="scripts/battle.js" charset="utf-8"></script>
-    <title></title>
+    <title>Battle</title>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -27,6 +27,10 @@
     <!-- Container to hold the game text and gameplay buttons -->
     <div class='container'>
       <div class='game-board'>
+        <div class='health-bars'>
+          <div class='health'>Your Health:<span id='my-health'></span></div>
+          <div class='health'>Troll's Health:<span id='troll-health'></span></div>
+        </div>
         <div class='btn-div'>
           <button class='btn spell'>Spell</button>
           <button class='btn weapon'>Weapon</button>
