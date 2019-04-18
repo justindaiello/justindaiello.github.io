@@ -5,47 +5,65 @@
 }
 
 body {
+  /* box-model */
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+
+  /* positioning */
+  position: relative;
+
+  /* typography */
+  font-family: 'MedievalSharp', cursive;
+
+  /* visual */
   background: url("dragons.jpg") no-repeat;
   background-attachment: fixed;
   background-repeat: round;
-  font-family: 'MedievalSharp', cursive;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  min-height: 100vh;
 }
 
 .logo {
+  /* box-model */
   width: 25%;
-  height: auto;
-  display: inline-block;
   margin-top: 10px;
   margin-right: auto;
+  height: auto;
+  display: inline-block;
 }
 
 .navbar {
+  /* box-model */
   margin-top: -10px;
 }
 
 .navbar,
 footer {
+  /* box-model */
+  width: 100%;
+  height: 65px;
   display: flex;
-  width: 100%
+
+  /* typography */
   font-size: 20px;
+
+  /* visual */
   background: var(--tan);
   border: 2px solid rgba(0, 0, 0, 0.5);
-  height: 65px;
 }
 
 footer {
-  justify-content: center;
-  align-items: center;
-  color: var(--red);
+  /* box-model */
+  margin-bottom: -15px;
+  width: 100%;
+
+  /* positioning */
   position: absolute;
   bottom: 0;
-  height: 50px;
-  width: 100%;
-  margin-bottom: -15px;
+  justify-content: center;
+  align-items: center;
+
+  /* typography */
+  color: var(--red);
 }
 
 footer p {
