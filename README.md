@@ -23,3 +23,7 @@ $('#barbarian').on('click', () => { $getCharInfo(0, "images/barbarian.png") })
 3. A function called `randomizer` is run first. It randomly selects 2 names from premade arrays and appends them to the DOM.
 4. Next, 5 ajax requests are made and their respective information is appened to the modal. Random index numbers are generated so the information will be different every time. The following information is requested and appened:
  * Class name, race, magical item, magical item description, monster, current condition.
+ 
+ ---
+ 
+ #### To play the battle game the user clicks on the Battle button which will take the user to a seperate page which runs a brief script then segues into a brief battle scenario. The main purpose of the battle scenario was to learn how to run scripts and add/append DOM elements more dynamically.
