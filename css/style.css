@@ -33,7 +33,7 @@ footer {
   justify-content: center;
   align-items: center;
   color: rgb(226, 16, 32);
-  position: absolute;
+  position: relative;
   bottom: 0;
   height: 50px;
   width: 100%;
@@ -51,6 +51,7 @@ footer p {
   /* flex-direction: row; */
   justify-content: flex-end;
   align-items: center;
+  margin-right: 15px;
 }
 
 .btns {
@@ -286,7 +287,29 @@ footer p {
 
 
 @media only screen and (max-width: 600px) {
-  footer {
-    position: relative;
-  }
+
+.navbar {
+  padding-bottom: 30px;
+}
+
+.logo {
+  display: none;
+}
+
+.main-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.char-info {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  position: relative;
+}
+
+
 }
