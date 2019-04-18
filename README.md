@@ -17,4 +17,9 @@ $('#barbarian').on('click', () => { $getCharInfo(0, "images/barbarian.png") })
 
 ---
 
-####
+#### To generate a character, the app does the following:
+1. a jQuery event listener wait for the Generate button to be clicked.
+2. Once the Generate button is clicked a hidden modal appears and blurs out the rest of the page and runs a function generate the data.
+3. A function called `randomizer` is run first. It randomly selects 2 names from premade arrays and appends them to the DOM.
+4. Next, 5 ajax requests are made and their respective information is appened to the modal. Random index numbers are generated so the information will be different every time. The following information is requested and appened:
+ * Class name, race, magical item, magical item description, monster, current condition.
