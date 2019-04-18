@@ -1,17 +1,11 @@
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-img {
+.logo {
   width: 25%;
   height: auto;
   display: inline-block;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-right: auto;
 }
+
 
 body {
   background: url("dragons.jpg") no-repeat;
@@ -30,13 +24,12 @@ footer {
   bottom: 0;
   height: 50px;
   width: 100%;
+  margin-bottom: -10px;
 }
 
 footer p {
   font-size: 15px;
 }
-
-
 
 .navlinks {
   text-decoration: none;
@@ -49,9 +42,14 @@ footer p {
   padding-left: 20px;
 }
 
+.navbar {
+  margin-top: -10px;
+}
+
 .navbar,
 footer {
   display: flex;
+  width: 100%
   /* flex-direction: row; */
   font-size: 20px;
   background: rgb(231, 231, 219);
@@ -63,8 +61,13 @@ footer {
   width: 100%;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  /* flex-direction: row; */
+  justify-content: flex-end;
   align-items: center;
+}
+
+.btns {
+  padding: 5px;
 }
 
 .battle,

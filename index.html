@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
     <script
@@ -15,7 +16,7 @@
     <!-- Navigation bar with links and dropdown -->
     <nav class='navbar'>
       <ul class='main-bar'>
-        <li><img src="images/logo.png" alt=""></li>
+        <img class='logo' src="images/logo.png" alt="">
         <li>
           <!-- Drop-down menu with class selectors -->
           <div class='dropdown'>
@@ -37,10 +38,10 @@
           </div>
         </li>
         <!-- Button to go to the battle.html page -->
-        <li><button class='battle'><a href='battle.html' target='_blank' rel='noopener'>Battle</a></button></li>
+        <li class='btns'><button class='battle'><a href='battle.html' target='_blank' rel='noopener'>Battle</a></button></li>
         <!-- Modal pops up on click -->
-        <li><button class='modal-btn'>Generate</button></li>
-        <li><a href="http://dnd.wizards.com/" target='_blank' rel='noopener' class='navlinks home'>Home</a></li>
+        <li class='btns'><button class='modal-btn'>Generate</button></li>
+        <li class='btns'><a href="http://dnd.wizards.com/" target='_blank' rel='noopener' class='navlinks home'>Home</a></li>
       </ul>
     </nav>
     <!-- Area where class information will be displayed. -->
