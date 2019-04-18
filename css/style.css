@@ -108,7 +108,7 @@ footer p {
   cursor: pointer;
 }
 
-.battle-btn {
+.battle-btn, .home {
   /* visual */
   text-decoration: none;
   color: var(--blue);
@@ -168,6 +168,7 @@ footer p {
 .dropdown:hover .drop-button,
 .battle:hover,
 .home-btn:hover,
+.home:hover,
 .modal-btn:hover,
 .battle-btn:hover {
   /* visual */

@@ -1,5 +1,17 @@
-console.log('script is connected')
+// console.log('script is connected')
+//Name Arrays for the randomizer to choose from. Names are taken from the D&D 5th edition manual
+const nameArr1 = ['Adrik', 'Eberk', 'Fargrim', 'Gunnloda', 'Adran', 'Himo', 'Rolen', 'Varis', 'Bree', 'Nedda', 'Verna', 'Portia', 'Perrin', 'Eldon', 'Khalid', 'Ramas', 'Surina', 'Mehen', 'Donaar', 'Heskan'];
 
+const nameArr2 = ['Goodbarrel', 'Greenbottle', 'High-hill', 'Tealeaf', 'Brushgather', 'Gemflower', 'Moonbrook', 'Diamonddew', 'Moonwhisper', 'Starflower', 'Battlehammer', 'Frostbeard', 'Ironfist', 'Fireforge', 'Thokk', 'Dispair', 'Sorrow', 'Stumbleduck', 'Badger', 'Sparklegem']
+
+//==================
+//Function to randomize a name from the 2 name arrays. Generates a random number based on the length of the array and concatenates the strings associated with the random index numbers
+//==================
+const randomizer = () => {
+  let firstName = nameArr1[Math.floor(Math.random() * nameArr1.length)];
+  let lastName = nameArr2[Math.floor(Math.random() * nameArr2.length)];
+  $('.name').text(` ${firstName} ${lastName}`).hide().fadeIn(1000);
+}
 
 //==================================================
 //Function to grab API data and append it to the DOM
@@ -29,8 +41,12 @@ const $getCharInfo = (index, pic) => {
   );
 }
 
-
+//====================
+//Generates a random chacter into the modal pop-up. Pulls API data from various places in the API. Generates a random number based on the amount of indexes in each category and plugs that random index number into the reqest then jQuery appends the pulled data into the hidden modal.
+//===================
 const generateCharacter = () => {
+//generates a random character name
+  randomizer();
 //ajax request for random class. Generates a random number and plugs it into the index request
   $.ajax({
       url: "https://api-beta.open5e.com/classes/"
