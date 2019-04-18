@@ -66,9 +66,9 @@ footer {
   color: var(--red);
 }
 
-footer p {
-  /* typography */
-  font-size: 15px;
+.fa {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .main-bar {
@@ -136,6 +136,8 @@ footer p {
 .drop-content {
   /* box-model */
   display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   /* positioning */
   position: absolute;
