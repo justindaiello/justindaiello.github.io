@@ -5,6 +5,8 @@ body {
   font-family: 'MedievalSharp', cursive;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  min-height: 100vh;
 }
 
 .logo {
@@ -33,11 +35,11 @@ footer {
   justify-content: center;
   align-items: center;
   color: rgb(226, 16, 32);
-  position: relative;
+  position: absolute;
   bottom: 0;
   height: 50px;
   width: 100%;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
 }
 
 footer p {
