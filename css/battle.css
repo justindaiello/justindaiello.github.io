@@ -13,7 +13,7 @@ img {
 }
 
 body {
-  background: url("images/dragons.jpg") no-repeat;
+  background: url("dragons.jpg") no-repeat;
   background-repeat: round;
   font-family: 'MedievalSharp', cursive;
   margin-left: auto;
@@ -91,7 +91,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.name, .health {
+.name1, .health {
   border: 1px solid white;
   color: rgb(104, 167, 188);
   font-size: 20px;

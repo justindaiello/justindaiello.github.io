@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="css/battle.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -14,18 +16,18 @@
   <body>
     <!-- Navigation Bar -->
     <nav class='navbar'>
-      <ul class='main-bar'>
-        <li><img src="css/images/logo.png" alt=""></li>
-        <li><a href="index.html" target='_blank' class='navlinks home'>Home</a></li>
+      <ul class='main-bar alt-bar'>
+        <li><img class='logo' src="images/logo.png" alt=""></li>
+        <li><button class='home-btn btns'><a href="index.html" target='_blank' rel='noopener' class='navlinks home'>Home</a></button></li>
       </ul>
     </nav>
     <!-- Character name and generator button -->
     <div class='game-btns'>
-      <div class='name'>Charater Name</div>
+      <div class='name1'>Charater Name</div>
       <button class='name-btn'>Generate Name</button>
     </div>
     <!-- Container to hold the game text and gameplay buttons -->
-    <div class='container'>
+    <section class='container'>
       <div class='game-board'>
         <div class='health-bars'>
           <div class='health'>Your Health:<span id='my-health'></span></div>
@@ -38,7 +40,7 @@
         </div>
         <div class='white-text'>Ready to Battle? Please choose your name.</div>
       </div>
-    </div>
+    </section>
     <footer>
       <div>Made with &hearts; by Justin Aiello</div>
     </footer>
