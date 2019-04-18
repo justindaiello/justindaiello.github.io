@@ -38,7 +38,7 @@
           </div>
         </li>
         <!-- Button to go to the battle.html page -->
-        <li><button class='battle btns'><a href='battle.html' target='_blank' rel='noopener'></a>Battle</button></li>
+        <li><button class='battle btns'><a href='battle.html' target='_blank' rel='noopener' class='battle-btn'>Battle</a></button></li>
         <!-- Modal pops up on click -->
         <li><button class='modal-btn btns'>Generate</button></li>
         <li><button class='home-btn btns'><a href="http://dnd.wizards.com/" target='_blank' rel='noopener' class='navlinks home'></a>Home</button></li>
@@ -71,17 +71,22 @@
         </div>
       </div>
     </section>
-    <footer>
-      <p>Made with &hearts; by Justin Aiello</p>
-    </footer>
-    <!-- Hidden Modal -->
     <div id='modal-box'>
       <div class='modal-inside'>
         <span class='close'>&times;</span>
         <h1></h1>
-        <h2>Race:<span class='race'></span></h2>
-        <h2>Magic Item:<span class='item'></span></h2>
+          <ul class='gen-info'>
+            <li>Race:<span class='race'></span></li>
+            <li>Magic Item:<span class='item'></span></li>
+            <li>Item Description:<span class='desc'></span></li>
+            <li>Monster Vanquished:<span class='monsters'><span></li>
+            <li>Current Condition:<span class='condition'><span></li>
+          </ul>
       </div>
     </div>
+    <footer>
+      <p>Made with &hearts; by Justin Aiello</p>
+    </footer>
+    <!-- Hidden Modal -->
   </body>
 </html>

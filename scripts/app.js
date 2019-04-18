@@ -47,7 +47,7 @@ const generateCharacter = () => {
     }).then(
         (data)=>{
           let randomIndex = Math.floor(Math.random() * (9 - 0) + 0);
-          $('.race').text(`${data.results[randomIndex].name}`).hide().fadeIn(1000);
+          $('.race').text(` ${data.results[randomIndex].name}`).hide().fadeIn(1000);
         },
         ()=>{ console.log('bad')}
       );
@@ -57,10 +57,31 @@ const generateCharacter = () => {
     }).then(
         (data)=>{
           let randomIndex = Math.floor(Math.random() * (30 - 0) + 0);
-          $('.item').text(`${data.results[randomIndex].name}`).hide().fadeIn(1000);
+          $('.item').text(` ${data.results[randomIndex].name}`).hide().fadeIn(1000);
+          $('.desc').text(` ${data.results[randomIndex].desc}`).hide().fadeIn(1000);
         },
         ()=>{ console.log('bad')}
       );
+//ajax request to generate monster killed. generates a random number and plugs it into the index request
+      $.ajax({
+          url: "https://api-beta.open5e.com/monsters/"
+      }).then(
+          (data)=>{
+            let randomIndex = Math.floor(Math.random() * (30 - 0) + 0);
+            $('.monsters').text(` ${data.results[randomIndex].name}`).hide().fadeIn(1000);
+          },
+          ()=>{ console.log('bad')}
+        );
+//ajax request to generate a random condition. generates a random condtion and plugs it into the index request.
+        $.ajax({
+            url: "https://api-beta.open5e.com/conditions/"
+        }).then(
+            (data)=>{
+              let randomIndex = Math.floor(Math.random() * (15 - 0) + 0);
+              $('.condition').text(` ${data.results[randomIndex].name}`).hide().fadeIn(1000);
+            },
+            ()=>{ console.log('bad')}
+          );
 
 
 }
@@ -71,43 +92,43 @@ $(() => {
 $('.navbar').hide().fadeIn(1000);
 
 //Listener to pull Barbarian API data and add it to the DOM
-$('#barbarian').on('click', () => { $getCharInfo(0, "css/images/barbarian.png") })
+$('#barbarian').on('click', () => { $getCharInfo(0, "images/barbarian.png") })
 
 //Listener to pull Bard API data and add it to the DOM
-$('#bard').on('click', () => { $getCharInfo(1, "css/images/bard.png") })
+$('#bard').on('click', () => { $getCharInfo(1, "images/bard.png") })
 
 //Listener to pull Cleric API data and add it to the DOM
-$('#cleric').on('click', () => { $getCharInfo(2, "css/images/cleric.png") })
+$('#cleric').on('click', () => { $getCharInfo(2, "images/cleric.png") })
 
 //Listener to pull Druid API data and add it to the DOM
-$('#druid').on('click', () => { $getCharInfo(3, "css/images/druid.png") })
+$('#druid').on('click', () => { $getCharInfo(3, "images/druid.png") })
 
 //Listener to pull Fighter API data and add it to the DOM
-$('#fighter').on('click', () => { $getCharInfo(4, "css/images/fighter.png") })
+$('#fighter').on('click', () => { $getCharInfo(4, "images/fighter.png") })
 
 //Listener to pull Monk API data and add it to the DOM
-$('#monk').on('click', () => { $getCharInfo(5, "css/images/monk.png") })
+$('#monk').on('click', () => { $getCharInfo(5, "images/monk.png") })
 
 //Listener to pull Paladin API data and add it to the DOM
-$('#paladin').on('click', () => { $getCharInfo(6, "css/images/paladin.png") })
+$('#paladin').on('click', () => { $getCharInfo(6, "images/paladin.png") })
 
 //Listener to pull Ranger API data and add it to the DOM
-$('#ranger').on('click', () => { $getCharInfo(7, "css/images/ranger.png") })
+$('#ranger').on('click', () => { $getCharInfo(7, "images/ranger.png") })
 
 //Listener to pull Rogue API data and add it to the DOM
-$('#rogue').on('click', () => { $getCharInfo(8, "css/images/rogue.png") })
+$('#rogue').on('click', () => { $getCharInfo(8, "images/rogue.png") })
 
 //Listener to pull Sorcerer API data and add it to the DOM
-$('#sorceror').on('click', () => { $getCharInfo(9, "css/images/sorcerer.png") })
+$('#sorceror').on('click', () => { $getCharInfo(9, "images/sorcerer.png") })
 
 //Listener to pull Warlock API data and add it to the DOM
-$('#warlock').on('click', () => { $getCharInfo(10, "css/images/warlock.png") })
+$('#warlock').on('click', () => { $getCharInfo(10, "images/warlock.png") })
 
 //Listener to pull Wizard API data and add it to the DOM
-$('#wizard').on('click', () => { $getCharInfo(11, "css/images/wizard.png") })
+$('#wizard').on('click', () => { $getCharInfo(11, "images/wizard.png") })
 
 
-//Listener to open the modal when the About button is clicked
+//Listener to open the modal when the generate button is clicked
 $('.modal-btn').on('click', () => {
   $('#modal-box').css('display', 'block');
   $('.container').css('filter', 'blur(3px)');
