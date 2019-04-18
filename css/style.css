@@ -145,9 +145,6 @@ footer p {
   justify-content: center;
   align-items:center;
   flex-wrap: wrap;
-  /* flex-direction: row; */
-  /* height: 500px; */
-  /* min-width: 600px; */
   min-width: 100px;
   border-radius: 10px;
   margin: 0 auto;
@@ -166,7 +163,6 @@ footer p {
 }
 
 .photo {
-  /* flex-grow: 1; */
   width: 100%;
   height: auto;
   display: inline-block;
@@ -177,7 +173,7 @@ footer p {
   margin-left: 25px;
   margin-top: 10px;
   height: 200px;
-  width: 58%;
+  width: 58.5%;
   color: white;
   overflow: auto;
   display: none;
@@ -188,12 +184,13 @@ footer p {
 }
 
 .class-info h1 {
+  font-size: 40px;
   color: rgb(104, 167, 188);
-  padding: 5px;
+  margin: 10px;
 }
 
 .class-info p, .box-2 p {
-  padding: 0px 5px;
+  padding: 0px 15px;
   color: rgb(231, 231, 219);
 }
 
