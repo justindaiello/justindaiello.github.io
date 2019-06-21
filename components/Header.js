@@ -20,14 +20,20 @@ const NavStyles = styled.ul`
   }
   a {
     color: ${props => props.theme.offWhite};
+    font-weight: 200;
+    font-size: 1.75rem;
+    text-transform: uppercase;
     cursor: pointer;
+    &:hover {
+      border-bottom: 1px solid ${props => props.theme.offWhite};
+    }
   }
 `;
 
 const Header = (props) => (
   <HeaderStyles>
     <NavStyles>
-      <li>
+      <li onClick={props.toggleHidden}>
         <a>About</a>
       </li>
 

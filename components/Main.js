@@ -12,15 +12,15 @@ const ParallaxStyles = styled.div`
 `
 
 const TestDiv = styled.div`
-  height: 1000px;
-  background: red;
+  height: 400px;
+  background: ${props => props.theme.offWhite};
 `;
 
 const Main = (props) => (
   <>
   <ParallaxStyles />
-    <TestDiv className="middle">hi</TestDiv> 
-  <ParallaxStyles />
+    {/* <TestDiv id="middle">hi</TestDiv> 
+  <ParallaxStyles /> */}
   </>
 
 )

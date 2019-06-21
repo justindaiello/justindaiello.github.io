@@ -3,6 +3,7 @@ import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
 import Main from './Main';
+import Name from './Name';
 
 const theme = {
   offWhite: '#EDEDED',
@@ -15,7 +16,7 @@ const StyledPage = styled.div`
 `;
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400&display=swap');
   html, 
   body {
     height: 100vh;
@@ -25,6 +26,7 @@ injectGlobal`
     box-sizing: border-box;
     /* make font base 10 */
     font-size: 10px;
+    scroll-behavior: smooth;
   }
 
   *, *:before, *:after {
@@ -46,12 +48,22 @@ injectGlobal`
 `;
 
 class Page extends Component {
+
+  state = {
+    isHidden: true,
+  }
+
+  toggleHidden = () => {
+    this.setState({ isHidden: !this.state.isHidden })
+  };
+
   render() {
     return (
       <ThemeProvider theme={theme}>
         <StyledPage>
           <Meta />
-          <Header />
+          <Header toggleHidden={this.toggleHidden}/>
+          <Name isHidden={this.state.isHidden}/>
           <Main />
         </StyledPage>
       </ThemeProvider>
