@@ -64,6 +64,7 @@ class Page extends Component {
           <Meta />
           <Header toggleHidden={this.toggleHidden}/>
           <Name isHidden={this.state.isHidden}/>
+            {this.props.children}
           <Main />
         </StyledPage>
       </ThemeProvider>
