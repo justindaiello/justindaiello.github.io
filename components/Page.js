@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
+import Main from './Main';
 
 const theme = {
   offWhite: '#EDEDED',
@@ -10,14 +11,14 @@ const theme = {
 
 const StyledPage = styled.div`
   background: ${props => props.theme.offWhite};
-  color: ${props => props.theme.black};
+  color: ${props => props.theme.offWhite};
 `;
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
   html, 
   body {
-    height: 100%
+    height: 100vh;
   }
 
   html {
@@ -35,7 +36,7 @@ injectGlobal`
     margin: 0;
     font-size: 1.5rem;
     line-height: 2;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   a {
@@ -51,8 +52,8 @@ class Page extends Component {
         <StyledPage>
           <Meta />
           <Header />
+          <Main />
         </StyledPage>
-
       </ThemeProvider>
     )
   }
