@@ -47,6 +47,9 @@ const NameStyles = styled.div`
     a {
       color: ${props => props.theme.offWhite};
       cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid ${props => props.theme.offWhite};
+      }
     }
   }
   h3, 

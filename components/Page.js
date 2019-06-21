@@ -8,6 +8,8 @@ import Name from './Name';
 const theme = {
   offWhite: '#EDEDED',
   black: '#393939',
+  lightBlue: '#99C0D1',
+  boxShadow: '0 12px 24px 0 rgba(0,0,0,.09)'
 }
 
 const StyledPage = styled.div`
@@ -38,7 +40,7 @@ injectGlobal`
     margin: 0;
     font-size: 1.5rem;
     line-height: 2;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
   }
 
   a {
