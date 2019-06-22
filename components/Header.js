@@ -9,7 +9,7 @@ const Header = (props) => (
       </li>
 
       <li
-        ><a href="#middle">Work</a>
+        ><a href="#work">Work</a>
       </li>
     </NavStyles>
   </HeaderStyles>
