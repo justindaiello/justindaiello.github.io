@@ -60,6 +60,9 @@ const ProjectDivStyles = styled.div`
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
+      a:hover {
+        border-bottom: 1px solid ${props => props.theme.black};
+      }
     }
     @media (max-width: 700px) {
       margin-bottom: 1rem;
