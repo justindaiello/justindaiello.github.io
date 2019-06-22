@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutInfo = (props) => (
+const AboutInfo = () => (
   <>
   <h3>Full Stack Developer | Asheville, NC</h3>
   <ul>

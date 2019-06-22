@@ -11,6 +11,7 @@ const ProjectDivStyles = styled.div`
     background: #C25B56;
   }
   height: 400px;
+  max-width: 1300px;
   width: 90%;
   margin: 0 auto;
   margin-top: 2em;
@@ -59,6 +60,21 @@ const ProjectDivStyles = styled.div`
       font-weight: 200;
 
     }
+    div {
+      padding-bottom: 1rem;
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+    @media (max-width: 700px) {
+      margin-bottom: 1rem;
+    }
+  }
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
 `;
 

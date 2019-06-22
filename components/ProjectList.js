@@ -1,24 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
+import ParallaxStyles from './styles/ParallaxStyles';
 import ProjectItem from './ProjectItem';
 import ProjectDivStyles from './styles/ProjectDivStyles';
-
-const ParallaxStyles = styled.div`
-  background-image: url(https://i.imgur.com/ltjU1dN.jpg);
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-`
 
 const projectInfo = [
   {
     name: 'GoAdventure', 
     desc: 'Full Stack JS app using React/Node/GraphQL.', 
     image: 'https://i.imgur.com/hb8EMA5.png',
-    url: '',
+    url: 'https://goadventure-next-prod.herokuapp.com/',
+    gitHub: 'https://github.com/justindaiello/react_store',
     key: 0, 
     id: "one",
   },
@@ -26,7 +17,8 @@ const projectInfo = [
     name: 'FarmStand', 
     desc: 'Full Stack JS app using EJS/Node/MongoDB.', 
     image: 'https://i.imgur.com/gN4pEsc.png',
-    url: '',
+    url: 'https://the-farm-stand.herokuapp.com/',
+    gitHub: 'https://github.com/justindaiello/farmstand',
     key: 1, 
     id: "two",
   },
@@ -34,13 +26,14 @@ const projectInfo = [
     name: 'D&D Character Selector', 
     desc: 'D&D Character Generator using jQuery and open4e API.', 
     image: 'https://i.imgur.com/gN4pEsc.png',
-    url: '',
+    url: 'https://github.com/justindaiello/d_and_d_generator',
+    gitHub: 'https://github.com/justindaiello/d_and_d_generator',
     key: 3, 
     id: "three",
   }
 ]
 
-const Main = (props) => (
+const Main = () => (
   <>
   <ParallaxStyles />
     <ProjectDivStyles id="work">
@@ -49,7 +42,6 @@ const Main = (props) => (
         )
       )}
     </ProjectDivStyles> 
-  {/* <ParallaxStyles /> */}
   </>
 
 )
