@@ -1,15 +1,9 @@
 import styled from 'styled-components';
 
 const ProjectDivStyles = styled.div`
-  #one {
-    background: #96C0CE;
-  }
-  #two {
-    background: #BEB9B5;
-  }
-  #three {
-    background: #C25B56;
-  }
+  #one { background: #96C0CE; }
+  #two { background: #BEB9B5; }
+  #three { background: #C25B56; }
   height: 400px;
   max-width: 1300px;
   width: 90%;

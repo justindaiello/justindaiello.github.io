@@ -56,6 +56,13 @@ const NameStyles = styled.div`
   ul {
     animation: ${showHidden} 1s linear;
   }
+  @media (max-width: 500px) {
+    h2, 
+    h3, 
+    ul li {
+      font-weight: 400;
+    }
+  }
   
 `;
 

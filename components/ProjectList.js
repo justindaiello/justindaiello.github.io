@@ -25,8 +25,8 @@ const projectInfo = [
   {
     name: 'D&D Character Selector', 
     desc: 'D&D Character Generator using jQuery and open4e API.', 
-    image: 'https://i.imgur.com/gN4pEsc.png',
-    url: 'https://github.com/justindaiello/d_and_d_generator',
+    image: 'https://i.imgur.com/4WPpgUE.png',
+    url: 'https://justindaiello.github.io/',
     gitHub: 'https://github.com/justindaiello/d_and_d_generator',
     key: 3, 
     id: "three",

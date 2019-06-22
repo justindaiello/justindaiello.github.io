@@ -26,6 +26,9 @@ const NavStyles = styled.ul`
     &:hover {
       border-bottom: 1px solid ${props => props.theme.offWhite};
     }
+    @media (max-width: 500px) {
+      font-weight: 400;
+    }
   }
 `;
 
