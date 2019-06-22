@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 25%;
+  height: auto;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+body {
+  background: url("dragons.jpg") no-repeat;
+  background-repeat: round;
+  font-family: 'MedievalSharp', cursive;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  color: rgb(226, 16, 32);
+}
+
+.navlinks {
+    text-decoration: none;
+    color: rgb(226, 16, 32);
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.home {
+  padding-left: 20px;
+}
+
+.navbar, footer {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  background: rgb(231, 231, 219);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  height: 65px;
+}
+
+.main-bar {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-btns{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: auto;
+
+}
+
+.container{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  min-width: 600px;
+}
+
+.game-board {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+  border: 1px solid white;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.name1, .health {
+  border: 1px solid white;
+  color: rgb(104, 167, 188);
+  font-size: 20px;
+  margin: 10px 5px 10px 0px;
+  padding: 5px;
+}
+
+.name-btn, .btn {
+  align-items: flex-start;
+  margin: 10px 0px 10px 5px;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'MedievalSharp', cursive;
+  color: rgb(104, 167, 188);
+  background: rgb(231, 231, 219);
+  cursor: pointer;
+}
+
+.name-btn:hover, .btn:hover {
+  background-color: rgb(104, 167, 188);
+  color: rgb(231, 231, 219);
+}
+
+.btn-div, .health-bars {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+  /* display: none; */
+}
+
+.game-text, .white-text {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.game-text {
+  color: red;
+}
+
+.white-text {
+  color: white;
+}
+
+.health-box {
+  align-self:
+  border: 1px solid white;
+  color: red;
+}

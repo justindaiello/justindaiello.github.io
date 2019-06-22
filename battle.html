@@ -1,0 +1,52 @@
+<!-- deactivated until game logic is complete -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <script src="scripts/battle.js" charset="utf-8"></script>
+    <title>Battle</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class='navbar'>
+      <ul class='main-bar alt-bar'>
+        <li><img class='logo' src="images/logo.png" alt=""></li>
+        <li><button class='home-btn btns'><a href="index.html" target='_blank' rel='noopener' class='navlinks home'>Home</a></button></li>
+      </ul>
+    </nav>
+    <!-- Character name and generator button -->
+    <div class='game-btns'>
+      <div class='name1'>Charater Name</div>
+      <button class='name-btn'>Generate Name</button>
+    </div>
+    <!-- Container to hold the game text and gameplay buttons -->
+    <section class='container'>
+      <div class='game-board'>
+        <div class='health-bars'>
+          <div class='health'>Your Health:<span id='my-health'></span></div>
+          <div class='health'>Troll's Health:<span id='troll-health'></span></div>
+        </div>
+        <div class='btn-div'>
+          <button class='btn spell'>Spell</button>
+          <button class='btn weapon'>Weapon</button>
+          <button class='btn flee'>Flee</button>
+        </div>
+        <div class='white-text'>Ready to Battle? Please choose your name.</div>
+      </div>
+    </section>
+    <footer>
+      <a href='https://github.com/justindaiello/justindaiello.github.io' target='_blank' rel='noopener'  class='fa fa-github'></a>
+      <a href='https://www.instagram.com/aiello.justin/'  target='blank' rel='noopener' class='fa fa-instagram'></a>
+      <a href='https://www.linkedin.com/in/jdaiello/' target='blank' rel='noopener' class='fa fa-linkedin'></a>
+    </footer>
+  </body>
+</html>

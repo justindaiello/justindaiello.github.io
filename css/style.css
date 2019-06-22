@@ -1,0 +1,557 @@
+:root {
+  --tan: rgb(231, 231, 219);
+  --red: rgb(226, 16, 32);
+  --blue: rgb(104, 167, 188);
+}
+
+body {
+  /* box-model */
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+
+  /* positioning */
+  /* position: relative; */
+
+  /* typography */
+  font-family: 'MedievalSharp', cursive;
+
+  /* visual */
+  background: url("dragons.jpg") no-repeat;
+  /* background-attachment: fixed; */
+  background-repeat: round;
+}
+
+.logo {
+  /* box-model */
+  width: 25%;
+  margin-top: 10px;
+  margin-right: auto;
+  height: auto;
+  display: inline-block;
+}
+
+.navbar {
+  /* box-model */
+  margin-top: -10px;
+}
+
+.navbar,
+footer {
+  /* box-model */
+  width: 100%;
+  height: 65px;
+  display: flex;
+
+  /* typography */
+  font-size: 20px;
+
+  /* visual */
+  background: var(--tan);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  /* box-model */
+  margin-bottom: -15px;
+  width: 100%;
+
+  /* positioning */
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+
+  /* typography */
+  color: var(--red);
+}
+
+.fa {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main-bar {
+  /* box-model */
+  margin-right: 15px;
+  width: 100%;
+  display: flex;
+
+  /* positioning */
+  justify-content: flex-end;
+  align-items: center;
+
+  /* visual */
+  list-style-type: none;
+}
+
+/* battle.html element*/
+.alt-bar {
+  justify-content: center;
+}
+
+.btns {
+  /* box-model */
+  margin: 5px;
+  padding: 5px 0px;
+  min-width: 100px;
+  flex: 1;
+}
+
+.battle,
+.modal-btn,
+.home-btn {
+  /* typography */
+  font-family: 'MedievalSharp', cursive;
+  font-size: 15px;
+
+  /* visual */
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--tan);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.battle-btn, .home {
+  /* visual */
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.drop-button,
+.drop-content {
+  /* typography */
+  font-family: 'MedievalSharp', cursive;
+  font-size: 15px;
+
+  /* visual */
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: var(--tan);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.drop-content {
+  /* box-model */
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  /* positioning */
+  position: absolute;
+  flex-direction: column;
+
+  /* visual */
+  border: 1px solid black;
+}
+
+.drop-content li {
+  /* box-model */
+  margin-right: 10px;
+  margin-left: -30px;
+  padding: 5px 5px;
+  display: flex;
+
+  /* positioning */
+  text-align: center;
+  justify-content: center;
+
+  /* visual */
+  border: 1px solid black;
+  border-radius: 6px;
+  list-style-type: none;
+}
+
+.dropdown:hover .drop-content {
+  /* box-model */
+  display: flex;
+
+  /* positioning */
+  overflow: visible;
+}
+
+.dropdown:hover .drop-button,
+.battle:hover,
+.home-btn:hover,
+.home:hover,
+.modal-btn:hover,
+.battle-btn:hover,
+.name-btn:hover,
+.btn:hover {
+  /* visual */
+  background-color: var(--blue);
+  color: var(--tan);
+}
+
+.drop-content li:hover {
+  /* visual */
+  background-color: var(--blue);
+  color: var(--tan);
+}
+
+.container {
+  /* box-model */
+  margin-bottom: 85px;
+  min-width: 100px;
+  display: flex;
+
+  /* positioning */
+  justify-content: center;
+}
+
+.char-info {
+  /* box-model */
+  margin: 0 auto;
+  margin-bottom: 10px;
+  min-width: 100px;
+  display: flex;
+
+  /* positioning */
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+  overflow: auto;
+
+  /* visual */
+  border-radius: 10px;
+}
+
+.photo-box {
+  /* box-model */
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 200px;
+  height: 200px;
+  display: none;
+
+  /* visual */
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.photo {
+  /* box-model */
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.class-info {
+  /* box-model */
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 58.5%;
+  height: 200px;
+  display: none;
+
+  /* positioning */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+
+  /* typography */
+  color: white;
+
+  /* visual */
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.class-info h1 {
+  /* box-model */
+  margin: 10px;
+
+  /* typography */
+  font-size: 40px;
+  color: var(--blue);
+}
+
+.class-info p, .box-2 p {
+  /* box-model */
+  padding: 0px 15px;
+
+  /* typography */
+  color: var(--tan);
+}
+
+.misc-info {
+  /* box-model */
+  margin-left: 15px;
+  width: 36%;
+  height: 250px;
+  display: none;
+
+  /* positioning */
+  flex-direction: column;
+  overflow: auto;
+
+  /* typography */
+  color: var(--tan);
+
+  /* visual */
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.box-2 {
+  /* box-model */
+  margin-left: 15px;
+}
+
+.misc-info li {
+  /* box-model */
+  padding: 15px 5px 5px 7px;
+
+  /* typography */
+  color: var(--blue);
+  font-size: 20px;
+}
+
+.misc-info span {
+  /* typography */
+  color: var(--red);
+  font-size: 18px;
+}
+
+.box-2 h2 {
+  /* positioning */
+  text-align: center;
+
+  /* typography */
+  color: var(--blue);
+}
+
+
+
+/* responsive modal */
+#modal-box {
+  /* box-model */
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%;
+  display: none;
+
+  /* positioning */
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+
+  /* visual */
+  border: 1px solid white;
+  background-color: rgba(231, 231, 219, 1);
+  box-shadow: 20px 20px 50px grey;
+  border: 4px solid rgb(0, 0, 0, .75);
+}
+
+.modal-inside {
+  /* box-model */
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  /* positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.close {
+  /* box-model */
+  margin-top: -5px;
+  padding-right: 5px;
+  height: 10px;
+
+  /* positioning */
+  text-align: right;
+
+  /* typography */
+  font-size: 40px;
+  color: var(--red);
+
+  /* visual */
+  cursor: pointer;
+}
+
+.modal-inside h1 {
+  /* box-model */
+  margin: 0 auto;
+  display: flex;
+  margin-top: -3px;
+
+  /* typography */
+  color: var(--blue);
+}
+
+.gen-info li {
+  /* box-model */
+  padding: 0px 5px 5px 0px;
+
+  /* positioning */
+  text-align: left;
+
+  /* typography */
+  font-size: 18px;
+  color: var(--red);
+}
+
+.gen-info span {
+  /* typography */
+  color: rgb(90, 90, 90);
+}
+
+/* ================================= */
+/* battle.html elements */
+/* ================================= */
+.alt-bar {
+  /* positioning */
+  justify-content: center;
+}
+
+.game-board {
+  /* box-model */
+  margin: 0 auto;
+  min-width: 100px;
+  height: 300px;
+  display: flex;
+
+  /* positioning */
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.game-btns{
+  /* box-model */
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+
+  /* positioning */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.name-btn, .btn {
+  /* box-model */
+  margin: 10px 0px 10px 5px;
+  padding: 5px;
+
+  /* positioning */
+  align-items: flex-start;
+
+  /* typography */
+  font-size: 20px;
+  font-family: 'MedievalSharp', cursive;
+  color: var(--blue);
+
+  /* visual */
+  background: var(--tan);
+  cursor: pointer;
+}
+
+.name1, .health {
+  /* box-model */
+  margin: 10px 5px 10px 0px;
+  padding: 5px;
+
+  /* typography */
+  color: var(--blue);
+  font-size: 20px;
+
+  /* visual */
+  border: 1px solid white;
+}
+
+.btn-div, .health-bars {
+  /* box-model */
+  margin-top: 5px;
+  display: none;
+
+  /* positioning */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.game-text, .white-text {
+  /* box-model */
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  /* positioning */
+  text-align: center;
+
+  /* typography */
+  font-size: 20px;
+}
+
+.game-text {
+  /* typography */
+  color: red;
+}
+
+.white-text {
+  /* typography */
+  color: white;
+}
+
+
+/* Query for small screens */
+@media only screen and (max-width: 600px) {
+
+body {
+  /* box-model */
+  min-height: 100vh;
+
+  /* positioning */
+  /* position: relative; */
+}
+
+.navbar {
+  /* box-model */
+  padding-bottom: 30px;
+
+  /* positioning */
+  top: 0;
+}
+
+.logo {
+  /* box-model */
+  display: none;
+}
+
+.main-bar {
+  /* box-model */
+  display: flex;
+
+  /* positioning */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.char-info {
+  /* box-model */
+  display: flex;
+
+  /* positioning */
+  flex-direction: column;
+}
+
+footer {
+  /* positioning */
+  /* position: fixed; */
+}
+
+}
